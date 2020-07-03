@@ -20,102 +20,96 @@
 
 </head>
 <body>
-        <div class="container"> <!-- Bungkus Luarnya -->
-            <div class="row"> <!-- Membuat kolom ke bawah -->
-                <div class="col-12 col-sm-12 col-md-12 text-center"> <!-- Bisa di buka lewat hp tablet dan laptop (Responsif) -->
-                    <h2 class="alert alert-primary">FORMULIR PENDAFTARAN MAHASISWA BARU</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12">
+                <h1 class="alert alert-primary text-center">FORMULIR PENDAFTARAN MAHASISWA BARU</h1>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12">
+                <form>
+                    <div class="form-group">
+                        <label for="namaLengkap">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="namaLengkap" placeholder="Masukkan Nama Lengkap Anda">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="emailAnda">Email</label>
+                        <input type="email" class="form-control" id="emailAnda" placeholder="Masukkan Email Anda">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="passAnda">Password</label>
+                        <input type="password" class="form-control" id="passAnda" placeholder="Masukkan Password Anda">
+                        <small>Password harus terdiri dari angka dan huruf minimal 8 karakter</small>
+                    </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+                        <label for="tempatLahir">Tempat Lahir</label>
+                        <input type="text" class="form-control" id="tempatLahir" placeholder="Masukkan Tempat Lahir Anda">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+                        <label for="tanggalLahir">Tanggal Lahir</label>
+                        <input type="date" id="tanggalLahir" class="form-control">
+                    </div>
+                </div>
+            </div <div class="form-group">
+            <label for="pilihJurusan">Pilih Jurusan</label>
+            <select class="form-control" id="pilihJurusan">
+                <option selected>Pilih Jurusan...</option>
+                <option>Teknik Informatika</option>
+                <option>Teknik Sipil</option>
+                <option>Teknik Kimia</option>
+                <option>Teknik Elektro</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="Alasan">Alasan Memilih Universitas Muhammadiyah Purwokerto</label>
+            <textarea class="form-control" id="Alasan" rows="5"></textarea>
+        </div>
+        
+        
+        <div class="row">
+            <div class="col-6 col-sm-6 col-md-6">
+                <div class="form-group">
+                    <label>Jenis Kelamin</label><br>
+                    <div class="form-check-inline">
+                        <!-- Posisi sejajar -->
+                        <label class="form-check-label">
+                            <!-- Diklik nama labelnya akan terselect sendiri -->
+                            <input type="radio" class="form-check-input" name="radio1" id="radio2" checked=""> Laki-Laki
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="radio1" id="radio2"> Perempuan
+                        </label>
+                    </div>
                 </div>
             </div>
         
-            <div class="row"> <!-- Membuat bagian dalamnya-->
-                <div class="col-12 col-sm-12 col-md-12">
-                    <form>
-                        <div class="form-group">
-                            <label for="namaLengkap">Nama Lengkap</label>
-                            <input type="text" class="form-control" id="namaLengkap" placeholder="Masukkan Nama Lengkap Anda">
-                        </div>
-        
-                        <div class="form-group">
-                            <label for="emailAnda">Email</label>
-                            <input type="email" class="form-control" id="emailAnda" placeholder="Masukkan Email Anda">
-                        </div>
-        
-                        <div class="form-group">
-                            <label for="passAnda">Password</label>
-                            <input type="password" class="form-control" id="passAnda" placeholder="Masukkan Password Anda">
-                            <small>Password harus terdiri dari angka dan huruf minimal 8 karakter</small>
-                        </div>
-                <div class="row">
-                    <div class="col-6 col-sm-6 col-md-6">
-                        <div class="form-group">
-                            <label for="tempatLahir">Tempat Lahir</label>
-                            <input type="text" class="form-control" id="tempatLahir" placeholder="Masukkan Tempat Lahir Anda">
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-sm-6 col-md-6">
-                        <div class="form-group">
-                            <label for="tanggalLahir">Tanggal Lahir</label>
-                            <input type="date" id="tanggalLahir" class="form-control">
-                        </div>
-                    </div>
+            <div class="col-6 col-sm-6 col-md-6">
+                <div class="form-group">
+                    <label for="uploadDokumen">Upload Dokumen</label>
+                    <input type="file" class="form-control-file" id="uploadDokumen">
+                    <small>Upload File dengan Ukuran Maksimal 5 MB</small><br>
                 </div>
-                
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <div class="form-group">
-                            <label for="pilihJurusan">Pilih Jurusan</label>
-                            <select class="form-control" id="pilihJurusan">
-                                <option selected>Pilih Jurusan...</option>
-                                <option>Teknik Informatika</option>
-                                <option>Teknik Sipil</option>
-                                <option>Teknik Kimia</option>
-                                <option>Teknik Elektro</option>
-                            </select>
-                        </div>
-                    
-                        <div class="form-group">
-                            <label for="Alasan">Alasan Memilih Universitas Muhammadiyah Purwokerto</label>
-                            <textarea class="form-control" id="Alasan" rows="5"></textarea>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <div class="form-group">
-                            <label>Jenis Kelamin</label><br>
-                            <div class="form-check-inline">
-                                <!-- Posisi sejajar -->
-                                <label class="form-check-label">
-                                    <!-- Diklik nama labelnya akan terselect sendiri -->
-                                    <input type="radio" class="form-check-input" name="radio1" id="radio2" checked=""> Laki-Laki
-                                </label>
-                            </div>
-                            <div class="form-check-inline">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="radio1" id="radio2"> Perempuan
-                                </label>
-                            </div>
-                        </div>
-
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <div class="form-group">
-                            <label for="uploadDokumen">Upload Dokumen</label>
-                            <input type="file" class="form-control-file" id="uploadDokumen">
-                            <small>Upload File dengan Ukuran Maksimal 5 MB</small><br>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <!-- Bagian Tombol-->
-                        <button type="submit" class="btn btn-success btn-lg">SIMPAN</button>
-                        <button type="reset" class="btn btn-danger btn-lg">RESET</button>
-                    </div>
-                </div>
+            </div>
         
-            </form>
         </div>
+        <!-- Bagian Tombol-->
+        <button type="submit" class="btn btn-success btn-lg">SIMPAN</button>
+        <button type="reset" class="btn btn-danger btn-lg">RESET</button>
+        
+        </form>
     </div>
 </body>
 </html>
