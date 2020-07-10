@@ -1,9 +1,18 @@
+html {
+    position: relative;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
 .container {
-    width: 95%;
-    margin-top: 20px;
+    width: 80%;
+    background-color: white;
+    margin-top: 60px;
     margin-bottom: 20px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-    padding: 20px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+    padding: 30px;
 }
 
 button {
@@ -11,4 +20,41 @@ button {
 }
  h1 {
      font-size: 33px;
- }
+}
+
+/* Cuma diatur width nya saja yang disesuaikan */
+@media (min-width: 220px) and (max-width: 720px) {
+    .container {
+        width: 95%;
+        background-color: white;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+        padding: 30px;
+    }
+
+}
+
+@media (min-width: 720px) and (max-width: 992px) {
+   .container {
+        width: 95%;
+        background-color: white;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+        padding: 30px;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+   .container {
+        width: 70%;
+        background-color: white;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+        padding: 50px;
+    }
+
+}
